@@ -619,7 +619,10 @@ mission "FW Hope Recon 1C"
 			label spare
 			apply
 				karma ++
-			`	Most ships are equipped with external speakers for exactly this sort of situation. Speaking through them, you tell the Navy crew below, "Return to your ship and leave this system immediately." They beat a hasty retreat and fire up their engines. You follow their ship into orbit to make sure it truly does leave the system...`
+			`Most ships are equipped with external speakers for exactly this sort of situation.`
+			`"Crew of the R.N.S. Susquehanna, this is Captain <last> of the <ship>," you announce. "I accept your surrender. You may return to your ship, leave this system immediately, and take no further part in fighting the Free Worlds."`
+			`As you expected, the Navy sailors are happy to accept these terms. They thank you in hand signals, walk back to their ship, fire up their engines, and take off. The Gunboat's weapon systems remain unarmed and inactive, as far as your sensors can tell.`
+			`Your mission on this planet done, you take off too, keeping an eye on the Navy ship. Their captain gave you their word of honor that they would leave this system...`
 				launch
 	
 	

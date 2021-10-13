@@ -118,6 +118,14 @@ void StartConditions::Load(const DataNode &node)
 			conversation.Load(child);
 		else if(key == "conversation" && hasValue && !child.HasChildren())
 			stockConversation = GameData::Conversations().Get(value);
+		else if(key == "event" && hasValue)
+		{
+			int minDays = (child.Size() >= 3 ? child.Value(2) : 0);
+			int maxDays = (child.Size() >= 4 ? child.Value(3) : minDays);
+			if(maxDays < minDays)
+				swap(minDays, maxDays);
+			events[GameData::Events().Get(child.Token(1))] = make_pair(minDays, maxDays);
+		}
 		else if(add)
 			child.PrintTrace("Skipping unsupported use of \"add\":");
 		else

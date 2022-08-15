@@ -47,6 +47,7 @@ public:
 	static const Command TARGET;
 	static const Command NEAREST;
 	static const Command DEPLOY;
+	static const Command RECALL;
 	static const Command AFTERBURNER;
 	static const Command CLOAK;
 	// UI controls:

@@ -58,7 +58,8 @@ const Command Command::JUMP(1uL << 12, "Initiate hyperspace jump");
 const Command Command::FLEET_JUMP(1uL << 13, "");
 const Command Command::TARGET(1uL << 14, "Select next ship");
 const Command Command::NEAREST(1uL << 15, "Select nearest hostile ship");
-const Command Command::DEPLOY(1uL << 16, "Deploy / recall fighters");
+const Command Command::DEPLOY(1uL << 16, "Deploy fighters");
+const Command Command::RECALL(1uL << 16, "Recall fighters");
 const Command Command::AFTERBURNER(1uL << 17, "Fire afterburner");
 const Command Command::CLOAK(1uL << 18, "Toggle cloaking device");
 const Command Command::MAP(1uL << 19, "View star map");
@@ -248,6 +249,7 @@ void Command::Load(const DataNode &node)
 			{"target", Command::TARGET},
 			{"nearest", Command::NEAREST},
 			{"deploy", Command::DEPLOY},
+			{"recall", Command::RECALL},
 			{"afterburner", Command::AFTERBURNER},
 			{"cloak", Command::CLOAK},
 			{"map", Command::MAP},

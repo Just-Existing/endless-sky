@@ -342,6 +342,7 @@ void PreferencesPanel::DrawControls()
 		Command::FASTFORWARD,
 		Command::NONE,
 		Command::DEPLOY,
+		Command::RECALL,
 		Command::FIGHT,
 		Command::GATHER,
 		Command::HOLD,

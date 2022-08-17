@@ -705,6 +705,10 @@ mission "FW Katya Alt 2"
 		dialog `You land on <planet>, but your escort with room for Mr. Eyes hasn't entered the system yet. Better depart and wait for it to arrive.`
 	on complete
 		set "FW Katya 2: done"
+	on decline
+		event "War Start Timer" 90 360
+		log `Was approached again by the same militia officer! Turns out she is part of some oligarchal 'Council' for the Free Worlds. This revolution business is starting to seem real shady.`
+		log "People" "Katya Reynolds" `A former member of Parliament representing the impoverished Dirt Belt worlds, Katya is now a leader in the Free Worlds movement. She is well-known for standing up for the "common people" when they are being overlooked or mistreated by the government or by corporations.`
 
 
 
@@ -1908,6 +1912,18 @@ mission "Rescue Katya 2"
 	
 	on accept
 		log "The Navy has invaded Kornephoros, while Katya was still undercover on Clink. No sign of where she is. She may have been taken as a prisoner."
+
+
+
+
+
+event "War Start Timer"
+
+mission "Sabik Battle 1"
+	
+
+
+
 
 
 

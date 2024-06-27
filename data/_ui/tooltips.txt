@@ -1469,3 +1469,6 @@ tip "Scroll speed"
 
 tip "Date format"
 	`The format that dates in the game are displayed in.`
+
+tip "Parenthesis in Ports"
+	`Toggle whether to show parenthesis around the commodity prices.`
